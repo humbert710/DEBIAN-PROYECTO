@@ -12,7 +12,7 @@ sincronización, interbloqueos y gestión de memoria.
 |---|---|---|
 | Edwin Humberto Noj Castillo | 2190-24-23230 | Coordinación, esqueleto, Procesos, Resultados |
 | _pendiente_ | | Planificación |
-| _pendiente_ | | Concurrencia |
+|Mynor Antonio Pérez Herrera| 2190-24-9339 | Concurrencia |
 | _pendiente_ | | Interbloqueo |
 | _pendiente_ | | Memoria |
 
