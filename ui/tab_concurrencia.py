@@ -1,6 +1,6 @@
 """
 Pestaña 3 — Concurrencia y sincronización.
-
+180496
 Corre core/concurrencia.py en hilos aparte y compara el saldo de una
 cuenta compartida sin sincronización y con threading.Lock.
 """
