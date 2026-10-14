@@ -23,3 +23,4 @@
   ID automático, eliminar, limpiar y datos de ejemplo.
 - Pestaña **Resultados**: tarjetas resumen y resultados publicados por cada módulo.
 - Pestañas Planificación, Concurrencia, Interbloqueo y Memoria con sus requisitos (pendientes).
+.
