@@ -1,11 +1,4 @@
-"""
-Pestaña 5 — Gestión de memoria.
 
-Asigna memoria contigua a los procesos de `sistema.procesos` con First Fit,
-Best Fit o Worst Fit, libera bloques y compacta. Dibuja la RAM como una
-barra de bloques y muestra memoria usada, libre y fragmentación externa.
-La lógica está en core/memoria.py.
-"""
 import tkinter as tk
 from tkinter import messagebox, ttk
 
