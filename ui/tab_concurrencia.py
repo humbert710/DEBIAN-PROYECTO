@@ -1,4 +1,9 @@
 """
+Pestaña 3 — Concurrencia y sincronización.
+
+Corre core/concurrencia.py en hilos aparte y compara el saldo de una
+cuenta compartida sin sincronización y con threading.Lock.
+"""
 import queue
 import threading
 import tkinter as tk
@@ -170,7 +175,12 @@ class TabConcurrencia(tk.Frame):
         self.conclusion.config(text=msg)
         self.btn.config(state="normal")
         if self.sistema is not None:
+            # La pestaña Resultados muestra texto, así que todo va como str.
             self.sistema.registrar_resultado("concurrencia", {
-                "sin_sincronizacion": sin,
-                "con_lock": con,
+                "Hilos": str(sin["hilos"]),
+                "Operaciones por hilo": f"{sin['operaciones']:,}",
+                "Saldo esperado": f"{sin['esperado']:,}",
+                "Sin Lock": f"{sin['obtenido']:,} ({sin['diferencia']:+,})",
+                "Con Lock": f"{con['obtenido']:,} ({con['diferencia']:+,})",
+                "Condición de carrera": "Sí" if not sin["correcto"] else "No observada",
             })
