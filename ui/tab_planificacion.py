@@ -219,3 +219,4 @@ class TabPlanificacion(ttk.Frame):
             self.scroll.pack(fill="x")
         else:
             self.scroll.pack_forget()
+
