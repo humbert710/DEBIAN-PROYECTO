@@ -1,4 +1,9 @@
 """
+Pestaña 3 — Concurrencia y sincronización.
+
+Corre core/concurrencia.py en hilos aparte y compara el saldo de una
+cuenta compartida sin sincronización y con threading.Lock.
+"""
 import queue
 import threading
 import tkinter as tk
