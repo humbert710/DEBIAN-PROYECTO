@@ -1,5 +1,18 @@
 # Historial de versiones
 
+## v0.3.0 — 2026-10-14
+**Agregado**
+- Pestaña **Memoria** conectada a `core/memoria.py`: First Fit, Best Fit y Worst Fit,
+  asignar (uno o todos), liberar, compactar y reiniciar; barra visual de la RAM,
+  tabla de bloques, fragmentación externa y publicación en Resultados.
+
+**Corregido**
+- `ui/tab_concurrencia.py`: docstring sin cerrar que impedía arrancar la aplicación.
+- Concurrencia publica en Resultados texto legible en vez de diccionarios crudos.
+- Planificación ya no borra su Gantt cuando otro módulo publica resultados;
+  solo se limpia si cambian los procesos.
+- Memoria libera y republica cuando se elimina un proceso de la pestaña Procesos.
+
 ## v0.1.0 — 2026-10-07
 **Agregado**
 - Ventana principal con 6 pestañas y tema oscuro (rojo Debian).

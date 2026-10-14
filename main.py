@@ -16,7 +16,7 @@ from ui.tab_interbloqueo import TabInterbloqueo
 from ui.tab_memoria import TabMemoria
 from ui.tab_resultados import TabResultados
 
-VERSION = "0.1.0"
+VERSION = "0.3.0"
 
 PESTANAS = [
     ("1 · Procesos", TabProcesos),
