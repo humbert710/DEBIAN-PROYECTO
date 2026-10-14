@@ -11,7 +11,7 @@ sincronización, interbloqueos y gestión de memoria.
 | Nombre | Carné | Módulo a cargo |
 |---|---|---|
 | Edwin Humberto Noj Castillo | 2190-24-23230 | Coordinación, esqueleto, Procesos, Resultados |
-| _pendiente_ | | Planificación |
+| Yónatan Sebastián Cuin Senté | 2190-24-18358 | Planificación |
 |Mynor Antonio Pérez Herrera| 2190-24-9339 | Concurrencia |
 | Erick José Hernández Ramírez | 2190-24-13674 | Interbloqueo |
 | _pendiente_ | | Memoria |
