@@ -41,12 +41,12 @@ DebianSim/
 │   └── interbloqueo.py      ← (v0.4) detección y recuperación
 ├── ui/                      ← INTERFAZ (una pestaña por archivo)
 │   ├── tema.py              ← colores y estilos (usar siempre estos)
-│   ├── tab_procesos.py      ← ✅ listo
-│   ├── tab_planificacion.py ← ✅ listo
-│   ├── tab_concurrencia.py  ← ✅ listo
+│   ├── tab_procesos.py      
+│   ├── tab_planificacion.py 
+│   ├── tab_concurrencia.py  
 │   ├── tab_interbloqueo.py
-│   ├── tab_memoria.py       ← ✅ listo
-│   └── tab_resultados.py    ← ✅ listo
+│   ├── tab_memoria.py       
+│   └── tab_resultados.py    
 └── docs/                    ← informe, acta, RACI, WBS, minutas
 ```
 
@@ -64,21 +64,4 @@ self.sistema.suscribir(self.refrescar)    # avisarme cuando cambien los procesos
 self.sistema.registrar_resultado("memoria", {"Fragmentación": "18 %"})  # aparece en Resultados
 ```
 
-## Versiones
 
-| Versión | Fecha meta | Contenido |
-|---|---|---|
-| v0.1 | 7 oct | Esqueleto + Procesos + Resultados |
-| v0.2 | 11 oct | Planificación |
-| v0.3 | 13 oct | Concurrencia + Memoria |
-| v0.4 | 15 oct | Interbloqueo |
-| v1.0 | 17 oct | Pruebas, pulido, lista para defensa |
-
-Ver `CHANGELOG.md` para el detalle de cambios.
-
-## Forma de trabajo en Git
-
-1. Antes de empezar: **Pull** (bajar lo último).
-2. Trabajar **solo en tus archivos** del módulo asignado.
-3. Commits pequeños con mensajes claros: `Planificación: agrego algoritmo FCFS`.
-4. **Push** al terminar. Cada quien sube con **su propia cuenta** (cuenta para la nota).
