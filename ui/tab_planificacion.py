@@ -21,6 +21,7 @@ class TabPlanificacion(ttk.Frame):
         self._estilo_combobox()
         self.resultado = None
         self._publicando = False   # evita borrar la pantalla al publicar resultados
+        self._huella = None        # datos de los procesos con los que se simuló
         self._crear_controles()
         self._crear_gantt()
         self._crear_comparacion()
@@ -150,10 +151,20 @@ class TabPlanificacion(ttk.Frame):
         finally:
             self._publicando = False
 
+    def _huella_procesos(self):
+        return tuple((p.pid, p.llegada, p.rafaga) for p in self.sistema.procesos)
+
     def refrescar(self):
-        """Se llama cuando cambian los procesos: los resultados viejos ya no valen."""
+        """Se llama cuando cambian los procesos: los resultados viejos ya no valen.
+
+        Sistema también avisa cuando otro módulo publica resultados; en ese caso
+        los procesos no cambiaron y la simulación en pantalla se conserva."""
         if self._publicando:
             return
+        huella = self._huella_procesos()
+        if huella == self._huella:
+            return
+        self._huella = huella
         self.resultado = None
         self.tabla.delete(*self.tabla.get_children())
         self.tabla_c.delete(*self.tabla_c.get_children())

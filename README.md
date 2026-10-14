@@ -42,10 +42,10 @@ DebianSim/
 ├── ui/                      ← INTERFAZ (una pestaña por archivo)
 │   ├── tema.py              ← colores y estilos (usar siempre estos)
 │   ├── tab_procesos.py      ← ✅ listo
-│   ├── tab_planificacion.py
-│   ├── tab_concurrencia.py
+│   ├── tab_planificacion.py ← ✅ listo
+│   ├── tab_concurrencia.py  ← ✅ listo
 │   ├── tab_interbloqueo.py
-│   ├── tab_memoria.py
+│   ├── tab_memoria.py       ← ✅ listo
 │   └── tab_resultados.py    ← ✅ listo
 └── docs/                    ← informe, acta, RACI, WBS, minutas
 ```
